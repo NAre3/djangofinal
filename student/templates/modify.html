@@ -1,0 +1,20 @@
+{%extends 'base.html'%}
+{% load static%}
+{%block title%}
+<title>
+    修改{{unit.name}}的資料
+</title>
+{%endblock%}
+{%block content%}
+    <h2>修改{{unit.name}}的資料</h2>
+    <form method="post" action="/modify/{{sname}}/">
+        {% csrf_token %}
+        <p>姓名:<input type="text" name="sname" value={{name}}></p>
+        <p>性別:<input type="text" name="ssex" value={{sex}}></p>
+        <p>生日:<input type="text" name="sbirth" value={{birth}}></p>
+        <p>電子郵件:<input type="text" name="semail" value={{email}}></p>
+        <p>手機:<input type="text" name="sphone" value={{phone}}></p>
+        <p><button type='submit'>修改</button></p>
+    </form>
+    <p><a href='/delete/{{unit.name}}'><button>刪除</button></a></p>
+{%endblock%}

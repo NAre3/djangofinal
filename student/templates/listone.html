@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            {{unit.name}}的個人資料
+        </title>
+    </head>
+    <body>
+        姓名:{{unit.name}}     <br/>
+        性別:{{unit.sex}}   <br/>
+        生日:{{unit.birth}}      <br/>
+        電子郵件:{{unit.email}}   <br/>
+        電話:{{unit.phone}}    <br/>
+    </body>
+    <a href="/modify/{{unit.name}}">
+        <button>修改</button>
+    </a><br/>
+    <a href="/listscore/">
+        <button>返回</button>
+    </a>
+</html>

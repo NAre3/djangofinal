@@ -1,0 +1,18 @@
+{%extends 'base.html'%}
+{% load static%}
+{%block title%}
+<title>
+    修改{{unit.sname}}的成績
+</title>
+{%endblock%}
+{%block content%}
+    <h2>修改{{unit.sname}}的成績</h2>
+    <form method="post" action="/modifyscore/{{sname}}/">
+        {% csrf_token %}
+        <p>國文:<input type="text" name="chinese" value={{chinese}}></p>
+        <p>數學:<input type="text" name="math" value={{math}}></p>
+        <p>英文:<input type="text" name="english" value={{english}}></p>
+        <p>自然:<input type="text" name="nature" value={{nature}}></p>
+        <p><button type='submit'>確定</button></p>
+    </form>
+{%endblock%}

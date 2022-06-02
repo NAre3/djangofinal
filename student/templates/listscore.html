@@ -1,0 +1,29 @@
+{%extends 'base.html'%}
+{% load static%}
+{%block title%}
+<title>
+    學生分數總覽
+</title>
+{%endblock%}
+{%block content%}
+<h2>
+    顯示所有學生分數
+</h2>
+<table border="1" cellpadding="0" cellspacing="0">
+    <th>姓名</th><th>國文</th><th>數學</th><th>英文</th><th>自然</th>
+    {% for student in students %}
+        <tr>
+            <td><a href="/listone/{{student.sname}}">{{student.sname}}</a></td>
+            <td>{{student.chinese}} </td>
+            <td>{{student.math}}    </td>
+            <td>{{student.english}} </td>
+            <td>{{student.nature}}  </td>
+            <td>
+                <a href='/modifyscore/{{student.sname}}'>
+                    <button>修改</button>
+                </a>
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+{%endblock%}

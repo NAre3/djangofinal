@@ -1,0 +1,40 @@
+<!--base.html-->
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block title%}{% endblock %}
+        {% load static%}
+        <link href='{% static "style.css" %}' rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="flex">
+            <div>
+                <ul>
+                    <li>
+                        <a href="/">
+                            <button>首頁 </button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/listall/">
+                            <button>學生資料 </button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/listscore/">
+                            <button>所有成績 </button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/insert/">
+                            <button>新增資料 </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            {%block content%}{%endblock%}
+        </div>
+    </body>
+</html>

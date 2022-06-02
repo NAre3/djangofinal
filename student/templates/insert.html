@@ -1,0 +1,23 @@
+{%extends 'base.html'%}
+{% load static%}
+{%block title%}
+<title>
+    新增學生
+</title>
+{%endblock%}
+{% block content %}
+<h2>新增資料</h2>
+<form method="post" action="/insert/">
+    {% csrf_token %}
+    <p>姓名:<input type="text" name="name"></p>
+    <p>性別:<input type="text" name="sex"></p>
+    <p>生日:<input type="text" name="birth"></p>
+    <p>電子郵件:<input type="text" name="email"></p>
+    <p>手機:<input type="text" name="phone"></p>
+    <p>國文:<input type="text" name="chinese"></p>
+    <p>數學:<input type="text" name="math"></p>
+    <p>英文:<input type="text" name="english"></p>
+    <p>自然:<input type="text" name="nature"></p>
+    <p><button type="submit">送出</button></p>
+</form>
+{%endblock%}
