@@ -8,6 +8,6 @@
 
 在manage.py的資料夾下輸入python manage.py runserver來部屬伺服器
 
-到網頁的http://127.0.0.1:8000/admin,來登入並使用資料庫
+到網頁的http://127.0.0.1:8000/admin 來登入並使用資料庫
 
 //資料庫的分類及欄位在modules.py中修改
