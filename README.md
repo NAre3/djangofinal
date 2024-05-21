@@ -1,4 +1,8 @@
+## 簡介
+
 應用Django的簡易學生成績CRUD系統
+___
+## 使用方式
 
 若有更改modules,需輸入python manage.py makemigrations來完成修改
 
@@ -11,7 +15,8 @@
 到網頁的http://127.0.0.1:8000/admin 來登入並使用資料庫
 
 資料庫的分類及欄位在modules.py中修改
-
+___
+## 介紹
 
 網址輸入http://127.0.0.1:8000/ 來訪問首頁，對應index.html
 ![image](https://github.com/NAre3/djangofinal/assets/62021701/f0deb872-f143-488e-9fde-57b2b6652669)
