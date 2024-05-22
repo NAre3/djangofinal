@@ -4,6 +4,7 @@
 ___
 ## 使用方式
 
+
 若有更改modules,需輸入python manage.py makemigrations來完成修改
 
 再輸入python manage.py migrate來部屬資料庫
@@ -19,7 +20,7 @@ ___
 ## 介紹
 
 網址輸入http://127.0.0.1:8000/ 來訪問首頁，對應index.html
-![image](https://github.com/NAre3/djangofinal/assets/62021701/f0deb872-f143-488e-9fde-57b2b6652669)
+![Untitled1](https://github.com/NAre3/djangofinal/assets/62021701/4965ae55-5449-4a22-8400-8e03d7f0db7a)
 
 點擊學生資料按鈕來總覽、編輯或刪除學生的資料
 ![image](https://github.com/NAre3/djangofinal/assets/62021701/1f13f9a6-7562-4e37-beef-21d286d87302)
